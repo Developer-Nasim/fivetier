@@ -21,8 +21,39 @@
  
 /* small screen :320px. */
 @media (max-width: 767px) {
+    label input[type="text"]{
+        max-width: 280px;
+    }
+    .stepActionBtns { 
+        margin-top: 45px;
+        flex-wrap: wrap;
+    }
+    .stepActionBtns > div {
+        width: 100%;
+        margin-top: 10px;
+    }
+    form.multistepform > h5 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .progs { 
+        margin-top: 15px;
+        margin-bottom: 30px; 
+    }
+    .stepBlk > p { 
+        margin-bottom: 30px;
+    }
+    .stepBlk > a { 
+        margin-top: 25px; 
+    }
 
- 
+
+
+
+
+
+
+
 }
  
 /* Large Mobile screen :480px. */
