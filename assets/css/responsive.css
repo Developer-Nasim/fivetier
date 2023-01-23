@@ -15,6 +15,41 @@
 /* Tablet screen :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
 
+    ul.milstone li {
+        padding: 10px 18px; 
+    }
+    .targetOverview { 
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+    .targetOverview_right {
+        padding-left: 0;
+    }
+    .topHeading h4 { 
+        font-size: 22px; 
+    }
+    .themeBtn {
+        padding: 12px 22px; 
+    }
+    .result-area {
+        padding: 20px 0;
+    } 
+    .demogDetails_wrp_left {
+        width: 100%; 
+    }
+    .ana_wrp label { 
+        min-width: 300px;
+        max-width: 300px;
+        height: 140px; 
+    }
+
+
+
+
+
+
+
+
 
 }
 
@@ -46,9 +81,93 @@
     .stepBlk > a { 
         margin-top: 25px; 
     }
+    .targetOverview { 
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+    ul.milstone {
+        flex-wrap: wrap;
+    }
 
+    .topHeading {
+        flex-wrap: wrap;
+    }
+    .numb_blk {
+        flex-wrap: wrap;
+    }
+    .demogDetails_wrp_left {
+        width: 100%;
+    }
+    .demogDetails_wrp_right {
+        flex-wrap: wrap;
+    }
+    .ana_wrp {
+        flex-wrap: wrap;
+    } 
+    .ana_wrp label {
+        min-width: 100%;
+        max-width: 100%;
+        height: 100px;
+    }
+    .container-fluid {
+        padding: 0 15px;
+    }
+    .topHeading h4 { 
+        font-size: 22px;
+        line-height: 26px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .targetOverview_right {
+        padding-left: 0;
+        margin-top: 15px;
+    }
+    ul.milstone li > img{
+        display: none;
+    }
+    ul.milstone li:last-child{
+        width: 100%;
+    }
+    ul.milstone li:last-child img{
+        display: block;
+        margin: auto;
+    }
+    .nm_blk {
+        margin: 20px 10px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .nm_blk img{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .utiilized {
+        padding: 15px;
+    }
+    .utilized-tab ul li {
+        width: 33% !IMPORTANT;
+        text-align: center;
+        padding: 0;
+    }
 
+    .utilized-tab div#pills-tabContent { 
+        padding: 20px;
+    }
+    .utilized-tab ul li button { 
+        padding: 20px 5px; 
+        padding-left: 20px;
+    }
+    .utilized-tab-wrp {
+        flex-wrap: wrap;
+    }
 
+    .utilized-tab-wrp-left {
+        margin-right: 0;
+    }
+    .themeBtn {
+        padding: 12px 20px; 
+    }
 
 
 

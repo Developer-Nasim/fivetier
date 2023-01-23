@@ -29,7 +29,7 @@
                     Blks.classList.remove('active')
                     NextBlk.classList.add('active')
                 }else{
-                    window.location.href = window.location.href+"/result.html"
+                    window.location.href = window.origin+"/result.html"
                 }
             })
             // Back

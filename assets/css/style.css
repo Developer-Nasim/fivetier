@@ -108,14 +108,10 @@ ul.menu-area {
 
 ul.menu-area a {
   display: block;
-  padding: 16px 32px;
-  background: #FFFFFF;
-/* Platform Grey 300
-
-Low_Icons
-*/
+  /* padding: 16px 32px;
+  background: #FFFFFF; 
   border: 1px solid #0000;
-  border-radius: 1000px;
+  border-radius: 1000px; */
   transition: .3s;
 }
 
@@ -136,124 +132,7 @@ ul.menu-area a:hover img {
   /* filter: invert(1); */
 }
 
-
-
-
-
-/* humbergar */
-.bar a {
-  width: 35px;
-  height: 35px;
-  float: right;
-  position: relative;
-} 
-.bar a span {
-  width: 100%;
-  height: 3px;
-  background: #fff;
-  display: block;
-  position: relative;
-  top: 17px;
-  border-radius: 30px;
-  transition: .3s;
-} 
-.bar a span:before {left: 0;content: "";position: absolute;width: 100%;height: 100%;background: #fff;bottom: 10px;border-radius: 30px;transition: .3s;} 
-.bar a span:after {left: 0;content: "";position: absolute;width: 100%;height: 100%;background: #fff;bottom: -10px;border-radius: 30px;transition: .3s;}
- 
-/* humbarger END */
- 
-
-/* mobile-menu START */
-.mobile-menu {
-  position: fixed;
-  width: 320px;
-  height: 100vh;
-  background: #ffffff;
-  z-index: 99;
-  box-shadow: 0px 0px 9px -1px #737373;
-  top: 0;
-  left: 0;
-  transition: .3s;
-  margin-left: -400px;
-  padding-left: 40px;
-  padding-top: 100px;
-}
-.siteBar{
-  margin-left: 0; 
-}
-.mobile-menu ul#pills-tab {
-  margin-top: 90px;
-  margin-bottom: 35px !important;
-  display: block;
-}
-.mobile-menu  nav ul li {
-  list-style: none;
-  display: block;
-}
-
-.mobile-menu nav ul li a {
-  color: #272835;
-  font-size: 16px;
-  line-height: 40px;
-  transition: .3s;
-}
-
-.mobile-menu nav ul li a:hover { 
-  color: #ff4900;
-}
-
-.mobile-menu ul#pills-tab li {
-  display: inline-block;
-}
-
-.mobile-menu ul#pills-tab li a {
-  color: #272835;
-  font-size: 15px;
-} 
-.mobile-menu a.theme-btn {
-  margin-top: 60px;
-  margin-left: 0;
-} 
-.mobile-menu a.theme-btn {
-  margin-top: 60px;
-  margin-left: 0;
-  height: 45px;
-  line-height: 45px;
-}
-.mobile-menu .user a {
-    display: block;
-    width: 100%;
-    padding: 0;
-    color: #272835;
-    line-height: 40px;
-    font-size: 16px;
-}
-
-.mobile-menu .user {
-    display: block;
-}
-
-.mobile-menu .user a:hover {
-    background: none;
-    opacity: .5;
-}
-.mobile-menu a.bars {
-  position: absolute;
-  right: 20px;
-  top: 15px;
-  width: 40px;
-  height: 40px;
-  background: #ff4900;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  font-size: 22px;
-  color: #fff;
-  box-shadow: 0px 0px 17px -2px #0000004a;
-}
-
-
-
+  
 
 /* Header section END CampainInfo css START*/
 
@@ -335,6 +214,9 @@ form.multistepform[data-label="four"] .progs::after{
   justify-content: center;
   text-decoration: none;
   width: max-content;
+}
+.themeBtn.inactive{
+  border: transparent;
 }
 .themeBtn.active{
   background: #E34444;
