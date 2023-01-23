@@ -84,7 +84,17 @@ li {
 .container{
   max-width: 1030px;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 
 
@@ -247,11 +257,40 @@ form.multistepform[data-label="four"] .stepActionBtns > div > a{
 .stepActionBtns > div > button img.irt {
   margin-left: 15px;
 } 
+.stepBlks{
+  overflow: hidden;
+  position: relative;
+  /* max-height: 330px; */
+  width: 100%;
+}
+form.multistepform[data-label="one"] .stepBlks{
+  min-height: 200px;
+}
+form.multistepform[data-label="two"] .stepBlks{
+  min-height: 245px;
+}
+form.multistepform[data-label="three"] .stepBlks{
+  min-height: 300px;
+}
+form.multistepform[data-label="four"] .stepBlks{
+  min-height: 320px;
+}
+
+
 .stepBlk{
-  display: none;
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  transition: .2s; 
+  opacity: 0;
+  visibility: hidden;
+  /* display: none; */
 }
 .stepBlk.active{
-  display: block;
+  top: 0px;
+  opacity: 1;
+  visibility: visible;
+  /* display: block; */
 }
 .stepBlk > p {
   font-size: 16px;
@@ -264,7 +303,7 @@ label {
   text-align: center;
 }
 
-label input[type="text"] {
+label input {
   border: 1px solid #D0D0D0;
   border-radius: 28px;
   width: 450px;
@@ -366,7 +405,7 @@ label input[type="text"] {
   padding: 0 40px;
 }
 
-.trippleColumnContents > div.treeOfTree input[type="text"] {
+.trippleColumnContents > div.treeOfTree input {
   width: 240px;
   margin-top: 25px;
   margin-bottom: 50px;

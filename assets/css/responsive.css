@@ -1,13 +1,18 @@
 /* Big screen :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
-
+    .trippleColumnContents .twoOfTree input {
+        max-width: 280px; 
+    }
 
 }
 
 
 /* Normal screen :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .trippleColumnContents .twoOfTree input {
+        max-width: 250px;
+        margin: 30px 0;
+    }
 
 }
 
@@ -42,10 +47,45 @@
         max-width: 300px;
         height: 140px; 
     }
-
-
-
-
+    .selectNow div { 
+        padding: 24px 15px; 
+    }
+    .trippleColumnContents {
+        display: block;
+        width: 100%;
+    }
+    .trippleColumnContents > div{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .trippleColumnContents .twoOfTree input { 
+        margin: 15px 0;
+    }
+    .trippleColumnContents > div.treeOfTree input { 
+        display: block;
+        margin: 15px auto;
+    }
+    .trippleColumnContents .twoOfTree {
+        border: none;
+        border-top: 1px solid #E4E4E4;
+        border-bottom: 1px solid #E4E4E4;
+        padding: 20px 0px;
+    }
+    .trippleColumnContents .twoOfTree > a { 
+        margin-bottom: 15px;
+    }
+    .stepActionBtns { 
+        margin-top: 50px;
+    }
+    form.multistepform[data-label="three"] .stepBlks {
+        min-height: 480px;
+    }
+    form.multistepform[data-label="four"] .stepBlks {
+        min-height: 740px;
+    }
+    .progs { 
+        margin-bottom: 40px; 
+    }
 
 
 
@@ -56,7 +96,7 @@
  
 /* small screen :320px. */
 @media (max-width: 767px) {
-    label input[type="text"]{
+    label input{
         max-width: 280px;
     }
     .stepActionBtns { 
@@ -64,8 +104,12 @@
         flex-wrap: wrap;
     }
     .stepActionBtns > div {
-        width: 100%;
+        width: 50%;
         margin-top: 10px;
+    }
+    .stepActionBtns > div:last-child{
+        width: 100%;
+        margin-top: 20px;
     }
     form.multistepform > h5 {
         font-size: 22px;
@@ -168,6 +212,83 @@
     .themeBtn {
         padding: 12px 20px; 
     }
+
+
+
+
+    .selectNow div { 
+        padding: 24px 15px; 
+    }
+    .trippleColumnContents {
+        display: block;
+        width: 100%;
+    }
+    .trippleColumnContents > div{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .trippleColumnContents .twoOfTree input { 
+        margin: 15px 0;
+        max-width: 270px;
+    }
+    .trippleColumnContents > div.treeOfTree input { 
+        display: block;
+        margin: 15px auto;
+    }
+    .trippleColumnContents .twoOfTree {
+        border: none;
+        border-top: 1px solid #E4E4E4;
+        border-bottom: 1px solid #E4E4E4;
+        padding: 20px 0px;
+    }
+    .trippleColumnContents .twoOfTree > a { 
+        margin-bottom: 15px;
+    }
+    .stepActionBtns { 
+        margin-top: 15px;
+    }
+    .multiSelectOption {
+        display: block;
+    }
+    .multiSelectOption > .selectNow{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .stepActionBtns > div > a,
+    form.multistepform[data-label="one"] button.goBack{
+        display: none;
+    }
+    form.multistepform[data-label="four"] .stepActionBtns > div > a,
+    form.multistepform:not([data-label="one"]) button.goBack{
+        display: block;
+    }
+    .stepActionBtns > div > button span {
+        display: none;
+    }
+    
+    .stepActionBtns > div > button img {
+        margin: 0 !important;
+    }
+    form.multistepform[data-label="one"] .stepBlks {
+        min-height: 170px;
+    }
+    form.multistepform[data-label="two"] .stepBlks {
+        min-height: 585px;
+    }
+    form.multistepform[data-label="three"] .stepBlks {
+        min-height: 480px;
+    }
+    form.multistepform[data-label="four"] .stepBlks {
+        min-height: 740px;
+    }
+    .progs { 
+        margin-bottom: 40px; 
+    }
+
+
+
+
+
 
 
 

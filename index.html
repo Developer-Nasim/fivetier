@@ -13,6 +13,53 @@
         <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
+    <style>
+table.table-condensed thead {
+    background: #dbdbdb;
+    text-align: center;
+}
+
+.datepicker {
+    padding: 0;
+    background: #f2f2f2;
+}
+
+table.table-condensed {
+    margin: 0;
+    width: 100%;
+}
+table.table-condensed thead tr:last-child th {
+    padding: 10px;
+}
+table.table-condensed thead tr th.datepicker-switch {
+    padding: 10px 0;
+}
+
+table.table-condensed thead tr th.prev,table.table-condensed thead tr th.next {
+    font-size: 22px;
+    cursor: pointer;
+}
+table.table-condensed tbody td {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+table.table-condensed tbody td.active.day {
+    background: black;
+    text-align: center;
+    color: #fff;
+}
+table.table-condensed tbody td.old.day {
+    opacity: .6;
+}
+
+table.table-condensed tbody td.new.day {
+    background: lightgrey;
+    color: #fff;
+    border-right: 1px solid #f2f2f2;
+}
+    </style>
     </head>
     <body>
 
@@ -53,7 +100,7 @@
                                 <div class="stepBlk active" data-step-label="one">
                                     <p>Please start by entering the URL of your website:</p>
                                     <label for="#">
-                                        <input type="text" name="" id="" placeholder="www.mywebsite.com">
+                                        <input type="url" name="" id="" placeholder="www.mywebsite.com">
                                     </label>
                                     <a href="#">Why do we need this information?</a>
                                 </div>
@@ -99,7 +146,7 @@
                                         <div class="twoOfTree">
                                             <p>How many people are you trying to reach?</p>
                                             <label for="#">
-                                                <input type="text" name="" id="" value="1,000,000">
+                                                <input type="number" name="" id="" value="1000000">
                                             </label>
                                             <a href="#">How can I calculate this number?</a>
                                         </div>  
@@ -130,11 +177,11 @@
                                         <div class="treeOfTree">
                                             <label for="#">
                                                 How much are you able to spend to reach your goal?
-                                                <input type="text" name="" id="" value="$10,000,00">
+                                                <input type="number" name="" id="" value="1000000">
                                             </label>
                                             <label for="#">
                                                 When would you like your campaign to start?
-                                                <input type="text" name="" id="" value="1/02/2023">
+                                                <input data-provide="datepicker" value="01/18/2023">  
                                             </label>
                                         </div> 
                                     </div>
@@ -143,10 +190,10 @@
 
                             <div class="stepActionBtns">
                                 <div>
-                                    <button type="button" class="goBack themeBtn"><img class="ilt" src="assets/img/arrow-left.svg" alt=""> Go Back</button>
+                                    <button type="button" class="goBack themeBtn"><img class="ilt" src="assets/img/arrow-left.svg" alt=""> <span>Go Back</span></button>
                                 </div>
                                 <div>
-                                    <button type="button" class="goNext themeBtn active">Proceed to next step <img class="irt" src="assets/img/arrow-right.svg" alt=""></button>
+                                    <button type="button" class="goNext themeBtn active"><span>Proceed to next step</span> <img class="irt" src="assets/img/arrow-right.svg" alt=""></button>
                                 </div>
                                 <div>
                                     <a href="#">Why do we need this information?</a>
@@ -183,6 +230,7 @@
   
 		<!-- JS here --> 
         <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script> 
         <script src="assets/js/main.js"></script> 
